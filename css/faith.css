@@ -1,0 +1,157 @@
+:root {
+    --lavender: #efe6ff;
+    --soft-purple: #d9c7ff;
+    --deep-purple: #6f4a8e;
+    --rose: #ffd9e6;
+    --cream: #fffaf5;
+    --text: #5a3b6b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: var(--lavender);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.site-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    box-shadow: 0 6px 18px #6f4a8e26;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 18px #6f4a8e40;
+}
+
+.main-title {
+    margin: 0;
+    font-size: 2.3rem;
+    color: var(--deep-purple);
+    text-shadow: 2px 2px 8px #6f4a8e40;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+    color: #8b6fa8;
+}
+
+nav {
+    background: var(--lavender);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--deep-purple);
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: var(--soft-purple);
+}
+
+
+#faith {
+    max-width: 1000px;
+    margin: 50px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#faith h2 {
+    color: var(--deep-purple);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    margin-top: 40px;
+    color: #7b5aa6;
+}
+
+#faith p {
+    max-width: 700px;
+    margin: 20px;
+}
+
+
+.verse-container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.verse-card {
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 25px #6f4a8e26;
+}
+
+.verse-card h4 {
+    margin-top: 0;
+    color: var(--deep-purple);
+}
+
+.verse-text {
+    font-style: italic;
+    margin: 10px;
+}
+
+.note {
+    font-size: 0.95rem;
+    background: var(--rose);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.closing {
+    margin-top: 40px;
+    font-weight: bold;
+    color: var(--deep-purple);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--lavender);
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 1.7rem;
+    }
+
+    .verse-container {
+        grid-template-columns: 1fr;
+    }
+}
